@@ -1,10 +1,10 @@
 ## GitHub Pages Blog
 
-This project is a showcase of how to setup a portfolio website using GitHub Pages, with the main accent put on the blogging part.
+This project is a portfolio website for Nishon Tandukar, a geo-spatial data scientist and open-source developer, showcasing geo-spatial analysis projects and technical insights.
 
 ### Live Site
 
-The site will be deployed at: [https://konishon.github.io/](https://konishon.github.io/)
+The site is deployed at: [https://konishon.github.io/](https://konishon.github.io/)
 
 ## Deployment to GitHub Pages
 
@@ -40,3 +40,4 @@ bundle exec jekyll serve
 
 # The site will be available at http://localhost:4000
 ```
+

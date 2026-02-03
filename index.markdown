@@ -1,18 +1,19 @@
 ---
 layout: home
-list_title: Latest Articles
+list_title: Recent Projects & Insights
 title: ''
 ---
 
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-content">
-    <h1>Konishon</h1>
-    <p class="subtitle">Software Developer & Technical Problem Solver</p>
+    <h1>Nishon Tandukar</h1>
+    <p class="subtitle">Geo-spatial Data Scientist | Open Source Developer</p>
     <p class="bio">
-      Passionate about building elegant solutions to complex problems. 
-      Specializing in full-stack development, system architecture, and delivering 
-      high-quality software that makes a difference.
+      Welcome! I'm a passionate data scientist specializing in geo-spatial analysis, mapping, 
+      and data-driven solutions for real-world challenges. My work focuses on leveraging 
+      open-source technologies to analyze geographic data, monitor natural disasters, and build 
+      tools that help communities make informed decisions.
     </p>
     <div class="hero-cta">
       <a href="{{ '/projects/' | relative_url }}">
@@ -30,3 +31,47 @@ title: ''
     </div>
   </div>
 </section>
+
+<!-- Areas of Expertise Section -->
+<section class="expertise-section">
+  <div class="section-header">
+    <h2>Areas of Expertise</h2>
+  </div>
+  <div class="expertise-grid">
+    <div class="expertise-item">
+      <div class="expertise-icon">🗺️</div>
+      <h3>Geo-spatial Analysis</h3>
+      <p>Working with OpenStreetMap, GIS data, and location-based services</p>
+    </div>
+    <div class="expertise-item">
+      <div class="expertise-icon">📊</div>
+      <h3>Data Science</h3>
+      <p>Python, machine learning, and data visualization</p>
+    </div>
+    <div class="expertise-item">
+      <div class="expertise-icon">🌍</div>
+      <h3>Disaster Monitoring</h3>
+      <p>Earthquake tracking, flood risk assessment, and extreme weather monitoring</p>
+    </div>
+    <div class="expertise-item">
+      <div class="expertise-icon">🚀</div>
+      <h3>Open Source Development</h3>
+      <p>Contributing to and building tools for the community</p>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Work Section -->
+<section class="featured-work-section">
+  <div class="section-header">
+    <h2>Featured Work</h2>
+  </div>
+  <ul class="featured-work-list">
+    <li><strong>OSM Pathfinding Visualizer:</strong> 2D/3D pathfinding visualizer using OpenStreetMap data with A*, Dijkstra, and BFS algorithms</li>
+    <li><strong>Nepal Peaks Geodata:</strong> Comprehensive geo-spatial dataset of Nepal's Himalayan peaks</li>
+    <li><strong>Extreme Rainfall Monitoring:</strong> Real-time monitoring system for flood risk assessment</li>
+    <li><strong>Nepal Palika Finder:</strong> Fast tool to identify municipalities from coordinates</li>
+  </ul>
+  <p>Check out my <a href="/projects/">Projects</a> page to see more of my work, or read my latest posts below to learn about my recent explorations in geo-spatial data science.</p>
+</section>
+

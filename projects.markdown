@@ -6,8 +6,8 @@ permalink: /projects/
 
 <section class="projects-section">
   <div class="section-header">
-    <h2>Technical Projects</h2>
-    <p>A showcase of my development work and open-source contributions</p>
+    <h2>Geo-spatial Data Science Projects</h2>
+    <p>Open-source tools and data analysis projects focused on geographic data and disaster monitoring</p>
   </div>
 
   <div class="projects-grid">
@@ -33,3 +33,4 @@ permalink: /projects/
     {% endfor %}
   </div>
 </section>
+

@@ -469,3 +469,117 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 20px;
     }
 }
+
+/* Expertise Section - Grid Layout */
+.expertise-section {
+    margin-bottom: 80px;
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.expertise-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    
+    .expertise-icon {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #0a0a0a;
+    }
+    
+    p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+/* Featured Work Section */
+.featured-work-section {
+    margin-bottom: 80px;
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.featured-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    li {
+        padding: 20px;
+        margin-bottom: 15px;
+        background: #f8f9fa;
+        border-left: 4px solid #2563eb;
+        border-radius: 4px;
+        font-size: 15px;
+        line-height: 1.7;
+        
+        strong {
+            color: #0a0a0a;
+            font-weight: 600;
+        }
+    }
+}
+
+.featured-work-section p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 500;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
