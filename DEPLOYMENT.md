@@ -91,6 +91,11 @@ bundle exec jekyll serve
 ### Ruby version errors
 - The workflow uses Ruby 3.1. If you need a different version, edit `.github/workflows/jekyll.yml`
 
+### Bundle install fails with "nokogiri requires ruby version < 3.1"
+- This means your `Gemfile.lock` has old gem versions that don't support Ruby 3.1+
+- Solution: Run `bundle update --all` to update all dependencies to their latest compatible versions
+- Make sure to commit the updated `Gemfile.lock` to the repository
+
 ## Additional Configuration
 
 ### Custom Domain
