@@ -18,20 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: GP Blog
-email: gp-blog@example.com
+title: Konishon's Blog
+email: konishon@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This project is a showcase of how to setup a portfolio website using GitHub Pages, 
-  with the main accent put on the blogging part.
-baseurl: '/gp-blog' # the subpath of your site, e.g. /blog
-url: 'https://simondosda.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+  Welcome to my personal blog and portfolio.
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://konishon.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username: simondosda
+github_username: konishon
 
 permalink: /:collection/:year-:month-:day-:title:output_ext
 show_excerpts: true
-
-staticman_url: https://sdosda-staticman.herokuapp.com/v3/entry/github/simondosda/gp-blog/main/comments
 
 # Build settings
 theme: minima
