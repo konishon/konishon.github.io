@@ -1,28 +1,471 @@
+/* ============================================
+   PROFESSIONAL PORTFOLIO THEME
+   Modern, Corporate-Minimalist Design
+   ============================================ */
+
+/* Typography - Professional Sans-Serif */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "SF Pro Display", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #0a0a0a;
+}
+
+/* Site Header - Clean and Professional */
+.site-header {
+    border-top: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
 .site-title {
-    color: orangered;
-    &:visited {
-        color: orangered;
-    }
-}
-
-.featured-image {
-    margin-bottom: 50px;
-    img {
-        width: 100%;
-        max-height: 250px;
-        object-fit: cover;
-    }
-}
-
-.post-list > li {
-    display: flex;
-    flex-wrap: wrap-reverse;
+    color: #0a0a0a;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     
-    div:first-child {
-        flex: 4 0 200px;
+    &:visited {
+        color: #0a0a0a;
     }
-    .featured-image {
-        flex: 1 0 200px;
-        margin-bottom: 0;
+    
+    &:hover {
+        color: #2563eb;
+        text-decoration: none;
+    }
+    
+    img {
+        display: none; /* Hide favicon in title */
+    }
+}
+
+.site-nav .page-link {
+    color: #4a4a4a;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    transition: color 0.2s ease;
+    
+    &:hover {
+        color: #2563eb;
+    }
+}
+
+/* Hero Section - High-Impact Introduction */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 80px 0 60px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #e0e0e0;
+    
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #0a0a0a;
+        line-height: 1.2;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+        color: #4a4a4a;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+    
+    .bio {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.7;
+        margin-bottom: 40px;
+    }
+    
+    .hero-cta {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        
+        a {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.2s ease;
+            
+            &:hover {
+                background-color: #1d4ed8;
+                transform: translateY(-1px);
+                box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            }
+            
+            &.secondary {
+                background-color: #f3f4f6;
+                color: #374151;
+                
+                &:hover {
+                    background-color: #e5e7eb;
+                }
+            }
+            
+            svg {
+                margin-right: 8px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
+
+/* Projects Grid - Professional Showcase */
+.projects-section {
+    margin-bottom: 80px;
+    
+    .section-header {
+        margin-bottom: 40px;
+        text-align: center;
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0a0a0a;
+        }
+        
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+    }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 0 0 40px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+        border-color: #2563eb;
+    }
+    
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #0a0a0a;
+        
+        a {
+            color: #0a0a0a;
+            text-decoration: none;
+            
+            &:hover {
+                color: #2563eb;
+            }
+        }
+    }
+    
+    .project-description {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+        
+        .tech-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: #f3f4f6;
+            color: #374151;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 4px;
+            border: 1px solid #e5e7eb;
+        }
+    }
+    
+    .project-meta {
+        font-size: 13px;
+        color: #999;
+        padding-top: 16px;
+        border-top: 1px solid #f0f0f0;
+    }
+}
+
+/* Blog Section - Clean Feed */
+.blog-section {
+    margin-bottom: 80px;
+    
+    .section-header {
+        margin-bottom: 40px;
+        
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0a0a0a;
+        }
+        
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+    }
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    > li {
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+        
+        &:first-child {
+            padding-top: 0;
+        }
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.post-list h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+    .post-link {
+        color: #0a0a0a;
+        text-decoration: none;
+        
+        &:hover {
+            color: #2563eb;
+        }
+    }
+}
+
+.post-excerpt {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Featured Images - Removed per professional aesthetic */
+.featured-image {
+    display: none;
+}
+
+/* Contact Section - Professional Footer */
+.contact-section {
+    background: #f8f9fa;
+    padding: 60px 0;
+    margin-top: 80px;
+    border-top: 1px solid #e0e0e0;
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+        
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0a0a0a;
+        }
+        
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+    }
+    
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        
+        a {
+            display: inline-flex;
+            align-items: center;
+            padding: 14px 28px;
+            background-color: #ffffff;
+            color: #374151;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 15px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.2s ease;
+            
+            &:hover {
+                background-color: #2563eb;
+                color: #ffffff;
+                border-color: #2563eb;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            }
+            
+            svg {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+/* Site Footer - Minimal */
+.site-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 40px 0;
+    
+    .footer-heading {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .contact-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .social-media-list {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        a {
+            color: #4a4a4a;
+            transition: color 0.2s ease;
+            
+            &:hover {
+                color: #2563eb;
+            }
+            
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+/* Wrapper - Improved spacing */
+.wrapper {
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0 40px;
+        margin-bottom: 50px;
+        
+        h1 {
+            font-size: 36px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+        }
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-header h2 {
+        font-size: 28px;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        
+        a {
+            width: 100%;
+            max-width: 280px;
+            justify-content: center;
+        }
+    }
+}
+
+/* Remove RSS subscribe link */
+.rss-subscribe {
+    display: none;
+}
+
+/* Page Content - Professional spacing */
+.page-content {
+    padding: 60px 0;
+}
+
+/* About Page - Professional layout */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    h1 {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 20px;
     }
 }
